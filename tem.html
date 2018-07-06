@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+            
+        }
+        body{
+            margin: 100px 500px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        input{
+            width: 550px;
+            height: 40px;
+            border: 1px solid #cccccc;
+        }
+
+        img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.baidu.com/img/bd_logo1.png" alt="">
+    <input type="text" placeholder="请输入要搜索的内容">
+</body>
+</html>
+<script>
+    document.querySelector("input").onblur=function(){
+        // console.log(event);
+        let value=this.value;
+        window.location.href=`https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=${value}&rsv_pq=c76c1e59000025b9&rsv_t=4b4fotFUEYun3u%2FGcNMsT8WVjsLeC3jGdLD%2BBrAM7MIyNmzB9EOy61%2BVZVY&rqlang=cn&rsv_enter=1&rsv_sug3=6&rsv_sug1=6&rsv_sug7=101`;
+    }
+</script>
